@@ -44,7 +44,7 @@ struct CreaturesListView: View {
                     ProgressView()
                         .tint(.red)
                         .scaleEffect(4)
-                }
+                } 
             }
         }
         .task {
