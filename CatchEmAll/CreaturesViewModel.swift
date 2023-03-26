@@ -36,8 +36,8 @@ class CreaturesViewModel: ObservableObject {
                 return
             }
             self.count = returned.count
-            self.urlString = returned.next
-            self.creaturesArray = returned.results
+            self.urlString = returned.next ?? ""
+            self.creaturesArray = self.creaturesArray + returned.results
         } catch {
             print("error: we could not use data from \(urlString) to get data and response")
         }
